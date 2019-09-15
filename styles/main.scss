@@ -19,12 +19,12 @@ body {
             
 
             .nav-item {
+                background-color: $themeprimarylight;
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
                 margin: 15px;
                 padding: 10px;
-                flex-grow: 1;
-                display: flex;
-                justify-content: center;
-                background-color: $themeprimarylight;
 
                 &.active {
                     background-color: $themetertiary;
@@ -32,10 +32,10 @@ body {
 
                 a {
                     color: $fontcolordark;
-                    text-transform: uppercase;
                     flex-grow: 1;
-                    text-align: center;
                     font: $fontxl $fontserif;
+                    text-align: center;
+                    text-transform: uppercase;
                     
                 } // a
             } //.nav-item
@@ -46,17 +46,17 @@ body {
 
     .budget {
         .sub-header {
-            width: 100%;
+            background-color: $themesecondary;
             display: flex;
             justify-content: center;
-            background-color: $themesecondary;
+            width: 100%;
 
             .modal-button {
-                padding: 5px;
-                margin: 10px;
                 background-color: $themesecondarylight;
                 border: 2px $themesecondarydark solid;    
                 font: $fontmd $fontsansserif; 
+                margin: 10px;
+                padding: 5px;
             } // .modal-button
         } // .sub-header
 
@@ -64,17 +64,17 @@ body {
 
         .expense-modal-content {
             background-color: $backgroundcolor;
+            border: 1px solid #888;
             margin: 15% auto;
             padding: 20px;
-            border: 1px solid #888;
             width: 80%;
         } // .expense-modal-content
 
         .income-modal-content {
             background-color: $backgroundcolor;
+            border: 1px solid #888;
             margin: 15% auto;
             padding: 20px;
-            border: 1px solid #888;
             width: 80%;
         } // .income-modal-content
 
@@ -90,33 +90,33 @@ body {
 
 .accounts {
         .sub-header {
-            width: 100%;
+            background-color: $themesecondary;
             display: flex;
             justify-content: center;
-            background-color: $themesecondary;
+            width: 100%;
 
             .modal-button {
-                padding: 5px;
-                margin: 10px;
                 background-color: $themesecondarylight;
                 border: 2px $themesecondarydark solid;    
                 font: $fontmd $fontsansserif; 
+                margin: 10px;
+                padding: 5px;
             } // .modal=button
         } // .sub-header
 
         .checking-modal-content {
             background-color: $backgroundcolor;
+            border: 1px solid #888;
             margin: 15% auto;
             padding: 20px;
-            border: 1px solid #888;
             width: 80%;
         } // .checking-modal-content
 
         .saving-modal-content {
             background-color: $backgroundcolor;
+            border: 1px solid #888;
             margin: 15% auto;
             padding: 20px;
-            border: 1px solid #888;
             width: 80%;
         } // .saving-modal-content
 

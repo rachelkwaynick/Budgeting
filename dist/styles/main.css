@@ -31,75 +31,75 @@ body header nav {
   justify-content: space-around;
 }
 body header nav .nav-item {
+  background-color: #58a5f0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
   margin: 15px;
   padding: 10px;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  background-color: #58a5f0;
 }
 body header nav .nav-item.active {
   background-color: #00e5ff;
 }
 body header nav .nav-item a {
   color: black;
-  text-transform: uppercase;
   flex-grow: 1;
-  text-align: center;
   font: 32px "Crimson Pro", serif;
+  text-align: center;
+  text-transform: uppercase;
 }
 body .budget .sub-header {
-  width: 100%;
+  background-color: #bbdefb;
   display: flex;
   justify-content: center;
-  background-color: #bbdefb;
+  width: 100%;
 }
 body .budget .sub-header .modal-button {
-  padding: 5px;
-  margin: 10px;
   background-color: #eeffff;
   border: 2px #8aacc8 solid;
   font: 18px "Roboto", sans-serif;
+  margin: 10px;
+  padding: 5px;
 }
 body .budget .expense-modal-content {
   background-color: #efefef;
+  border: 1px solid #888;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
 }
 body .budget .income-modal-content {
   background-color: #efefef;
+  border: 1px solid #888;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
 }
 body .accounts .sub-header {
-  width: 100%;
+  background-color: #bbdefb;
   display: flex;
   justify-content: center;
-  background-color: #bbdefb;
+  width: 100%;
 }
 body .accounts .sub-header .modal-button {
-  padding: 5px;
-  margin: 10px;
   background-color: #eeffff;
   border: 2px #8aacc8 solid;
   font: 18px "Roboto", sans-serif;
+  margin: 10px;
+  padding: 5px;
 }
 body .accounts .checking-modal-content {
   background-color: #efefef;
+  border: 1px solid #888;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
 }
 body .accounts .saving-modal-content {
   background-color: #efefef;
+  border: 1px solid #888;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
 }
 body .accounts .account-content {
