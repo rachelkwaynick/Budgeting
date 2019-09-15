@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Budgeting</title>
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro|Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="budgetBtn" class="nav-item">
+                <a href="#">Budget</a>
+            </div>
+            <div id="accountsBtn" class="nav-item">
+                <a href="#">Accounts</a>
+            </div>
+            <div id="paycheckBtn" class="nav-item">
+                <a href="#">Paycheck Calculator</a>
+            </div>
+        </nav>
+    </header>
+    <div id="budget" class="budget">
+        <div class="sub-header">
+            <div id="expenseModalBtn" class="modal-button">
+                New Expense Category
+            </div><!-- #expenseModalBtn -->
+            <div id="incomeModalBtn" class="modal-button">
+                New Income Category
+            </div><!-- #incomeModalBtn -->
+        </div> <!-- .sub-header -->
+    
+        <div id="expenseModal" class="modal hide">
+            <div class="expense-modal-content">
+                <span class="close">&times;</span>
+                <p>Placeholder Text for Expense Form</p>
+            </div><!-- .expense-modal-content -->
+        </div><!-- #expenseModal -->
+        <div id="incomeModal" class="modal hide">
+            <div class="income-modal-content">
+                <span class="close">&times;</span>
+                <p>Placeholder Text for Income Form</p>
+            </div><!-- .income-modal-content -->
+        </div><!-- #incomeModal -->
+
+    </div>
+    <div id="accounts" class="accounts">
+        <div class="sub-header">
+            <div id="checkingModalBtn" class="modal-button">
+                New Checking Account
+            </div><!-- #checkingModalBtn -->
+            <div id="savingModalBtn" class="modal-button">
+                New Savings Account
+            </div><!-- #savingModalBtn -->
+        </div><!-- .sub-header -->
+        
+        <div id="checkingModal" class="modal hide">
+            <div class="checking-modal-content">
+                <span class="close">&times;</span>
+                <p>Placeholder Text for Checking Form</p>
+            </div><!-- .checking-modal-content -->
+        </div><!-- #checkingModal -->
+        <div id="savingModal" class="modal hide">
+            <div class="saving-modal-content">
+                <span class="close">&times;</span>
+                <p>Placeholder Text for Saving Form</p>
+            </div><!-- .saving-modal-content -->
+        </div><!-- #savingModal -->
+
+        <div class="account-content">
+            <div class="saving">
+                <div class="saving-header">
+                    <div class="saving-title">
+                        SAVINGS
+                    </div><!-- .saving-title -->
+                    <div class="saving-total">
+                        $500.00
+                    </div><!-- .saving-total -->
+                </div><!-- .saving-header -->
+                <div class="saving-content">
+                    <div class="bucket">
+                        <div class="bucket-header">
+                            <div class="bucket-title">
+                                Bucket
+                            </div><!-- .bucket-title -->
+                            <div class="bucket-total">
+                                $100.00
+                            </div><!-- .bucket-total -->
+                        </div><!-- .bucket-header -->
+                        <div class="bucket-content">
+                            <div class="bucket-row">
+                                <div class="bucket-item-date">
+                                    8/11/19
+                                </div><!-- .bucket-item-date -->
+                                <div class="bucket-item-amount">
+                                    $0.00
+                                </div><!-- .bucket-item-amount -->
+                            </div><!-- .bucket-row -->
+                        </div><!-- .bucket-content -->
+                        <div class="bucket-goal">
+                            <div class="bucket-goal-title">
+                                Goal
+                            </div><!-- .bucket-goal-title -->
+                            <div class="bucket-goal-amount">
+                                $1000.00
+                            </div><!-- .bucket-goal-amount -->
+                        </div><!-- .bucket-goal -->
+                    </div><!-- .bucket -->
+                </div><!-- .saving-content -->
+            </div> <!-- .saving -->
+        </div> <!-- .account-content -->
+        
+
+
+    </div><!-- #accounts -->
+    <div id="paycheck" class="paycheck">
+        <div class="content">Paycheck WORKS</div>
+    </div><!-- #paycheck -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

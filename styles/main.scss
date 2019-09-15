@@ -1,0 +1,191 @@
+@import 'reset';
+@import 'theme';
+
+
+body {
+    background-color: $backgroundcolor;
+
+
+/*---------------------------------------Header -------------------------------*/
+
+    header {
+        background-color: $themeprimarydark;
+        padding: 10px 20px;
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+
+            
+
+            .nav-item {
+                margin: 15px;
+                padding: 10px;
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                background-color: $themeprimarylight;
+
+                &.active {
+                    background-color: $themetertiary;
+                } // &.active
+
+                a {
+                    color: $fontcolordark;
+                    text-transform: uppercase;
+                    flex-grow: 1;
+                    text-align: center;
+                    font: $fontxl $fontserif;
+                    
+                } // a
+            } //.nav-item
+        } //nav
+    } //header
+
+/*---------------------------------------#Budget -------------------------------*/
+
+    .budget {
+        .sub-header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $themesecondary;
+
+            .modal-button {
+                padding: 5px;
+                margin: 10px;
+                background-color: $themesecondarylight;
+                border: 2px $themesecondarydark solid;    
+                font: $fontmd $fontsansserif; 
+            } // .modal-button
+        } // .sub-header
+
+
+
+        .expense-modal-content {
+            background-color: $backgroundcolor;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        } // .expense-modal-content
+
+        .income-modal-content {
+            background-color: $backgroundcolor;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        } // .income-modal-content
+
+    } // .budget
+
+
+
+
+
+
+
+/*---------------------------------------#Accounts -------------------------------*/
+
+.accounts {
+        .sub-header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $themesecondary;
+
+            .modal-button {
+                padding: 5px;
+                margin: 10px;
+                background-color: $themesecondarylight;
+                border: 2px $themesecondarydark solid;    
+                font: $fontmd $fontsansserif; 
+            } // .modal=button
+        } // .sub-header
+
+        .checking-modal-content {
+            background-color: $backgroundcolor;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        } // .checking-modal-content
+
+        .saving-modal-content {
+            background-color: $backgroundcolor;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        } // .saving-modal-content
+
+
+        .account-content {
+            display: flex;
+
+            .saving {
+                background-color: $themesecondary;
+
+                .saving-header {
+                    background-color: $themesecondarydark;
+                } // .saving-header
+
+                .saving-content {
+                    .bucket {
+                        .bucket-header {
+                            .bucket-title {
+
+                            } // .bucket-title
+                            .bucket-total {
+
+                            } // .bucket-total
+                        } // .bucket-header
+                    } // .bucket
+                } // .saving-content
+            } // .saving
+        } // .acount-content
+
+
+
+
+        
+    }
+
+
+/*---------------------------------------#Modals -------------------------------*/
+
+
+        .hide {
+            display: none;
+        } // .hide
+    
+
+        .modal {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: $themeprimarydark;
+            background-color: rgba(0,0,0,0.4);
+        } // .modal
+
+
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        } // .close
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        } // .close:hover, .close:focus
+} // .body

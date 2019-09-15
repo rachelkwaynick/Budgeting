@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #efefef;
+  /*---------------------------------------Header -------------------------------*/
+  /*---------------------------------------#Budget -------------------------------*/
+  /*---------------------------------------#Accounts -------------------------------*/
+  /*---------------------------------------#Modals -------------------------------*/
+}
+body header {
+  background-color: #004c8c;
+  padding: 10px 20px;
+}
+body header nav {
+  display: flex;
+  justify-content: space-around;
+}
+body header nav .nav-item {
+  margin: 15px;
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #58a5f0;
+}
+body header nav .nav-item.active {
+  background-color: #00e5ff;
+}
+body header nav .nav-item a {
+  color: black;
+  text-transform: uppercase;
+  flex-grow: 1;
+  text-align: center;
+  font: 32px "Crimson Pro", serif;
+}
+body .budget .sub-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #bbdefb;
+}
+body .budget .sub-header .modal-button {
+  padding: 5px;
+  margin: 10px;
+  background-color: #eeffff;
+  border: 2px #8aacc8 solid;
+  font: 18px "Roboto", sans-serif;
+}
+body .budget .expense-modal-content {
+  background-color: #efefef;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+body .budget .income-modal-content {
+  background-color: #efefef;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+body .accounts .sub-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #bbdefb;
+}
+body .accounts .sub-header .modal-button {
+  padding: 5px;
+  margin: 10px;
+  background-color: #eeffff;
+  border: 2px #8aacc8 solid;
+  font: 18px "Roboto", sans-serif;
+}
+body .accounts .checking-modal-content {
+  background-color: #efefef;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+body .accounts .saving-modal-content {
+  background-color: #efefef;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+body .accounts .account-content {
+  display: flex;
+}
+body .accounts .account-content .saving {
+  background-color: #bbdefb;
+}
+body .accounts .account-content .saving .saving-header {
+  background-color: #8aacc8;
+}
+body .hide {
+  display: none;
+}
+body .modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #004c8c;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+body .close:hover,
+body .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
