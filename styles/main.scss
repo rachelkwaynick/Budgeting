@@ -9,7 +9,7 @@ body {
 /*---------------------------------------Header -------------------------------*/
 
     header {
-        background-color: $themeprimarydark;
+        background-color: $primarydark;
         padding: 10px 20px;
 
         nav{
@@ -19,7 +19,7 @@ body {
             
 
             .nav-item {
-                background-color: $themeprimarylight;
+                background-color: $primarylight;
                 display: flex;
                 flex-grow: 1;
                 justify-content: center;
@@ -27,7 +27,7 @@ body {
                 padding: 10px;
 
                 &.active {
-                    background-color: $themetertiary;
+                    background-color: $tertiary;
                 } // &.active
 
                 a {
@@ -46,14 +46,14 @@ body {
 
     .budget {
         .sub-header {
-            background-color: $themesecondary;
+            background-color: $secondary;
             display: flex;
             justify-content: center;
             width: 100%;
 
             .modal-button {
-                background-color: $themesecondarylight;
-                border: 2px $themesecondarydark solid;    
+                background-color: $secondarylight;
+                border: 2px $secondarydark solid;    
                 font: $fontmd $fontsansserif; 
                 margin: 10px;
                 padding: 5px;
@@ -90,18 +90,24 @@ body {
 
 .accounts {
         .sub-header {
-            background-color: $themesecondary;
+            background-color: $secondary;
             display: flex;
             justify-content: center;
             width: 100%;
 
             .modal-button {
-                background-color: $themesecondarylight;
-                border: 2px $themesecondarydark solid;    
+                background-color: $secondarylight;
+                border: 2px $secondarydark solid;    
                 font: $fontmd $fontsansserif; 
                 margin: 10px;
                 padding: 5px;
             } // .modal=button
+
+            .modal-button:hover {
+                background-color: $primary;
+                box-shadow: $dropshadow;
+                color: $fontcolorlight;
+            }
         } // .sub-header
 
         .checking-modal-content {
@@ -125,25 +131,150 @@ body {
             display: flex;
 
             .saving {
-                background-color: $themesecondary;
+                background-color: $savinglight;
+                margin: 10px;
+                max-width: 20%;
+                border: 2px $savingdark solid;
+                box-shadow: $dropshadow;
 
                 .saving-header {
-                    background-color: $themesecondarydark;
+                    background-color: $saving;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px;
+                    border-bottom: 1px $savingdark solid;
+                    text-transform: uppercase;
+
                 } // .saving-header
 
                 .saving-content {
-                    .bucket {
-                        .bucket-header {
-                            .bucket-title {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
 
+                    .bucket {
+                        margin: 10px;
+                        border: 1px $savingcontrast solid;
+                        background-color: $backgroundcolor;
+
+                        .bucket-header {
+                            display: flex;
+                            background-color: $savingcontrastdark;
+                            color: $fontcolorlight;
+
+                            .bucket-title {
+                                padding: 5px;
                             } // .bucket-title
+
                             .bucket-total {
+                                padding: 5px;
 
                             } // .bucket-total
+
                         } // .bucket-header
+
+                        .bucket-progress {
+
+                            .bucket-progress-container {
+                                height: 15px;
+                                position: relative;
+                                background: $savingcontrastlight;
+                                box-shadow: $dropshadow;
+
+                                .bucket-progress-meter {
+                                    width: 25%;
+                                    display: block;
+                                    height: 100%;
+                                    background-color: $savingcontrast;
+                                    position: relative;
+                                    overflow: hidden;
+                                } //.bucket-progress-meter
+                            } // . bucket-progress-container
+                        } // .bucket-progress
+
+                        .bucket-content {
+                            margin: 5px;
+
+                            .bucket-row {
+                                display: flex;
+
+                                .bucket-item-date {
+                                    padding: 5px;
+                                }//.bucket-item-date
+
+                                .bucket-item-amount {
+                                    padding: 5px;
+                                }//.bucket-item-amount
+                            } //.bucket-row
+                        }// .bucket-content
+
+                        .bucket-goal {
+                            display: flex;
+                            background-color: $savingcontrast;
+                            color: $fontcolorlight;
+
+                            .bucket-goal-title {
+                                padding: 5px;
+                            }//.bucket-goal-title
+
+                            .bucket-goal-amount {
+                                padding: 5px;
+                            }//.bucket-goal-amount
+                        }// .bucket-goal
                     } // .bucket
                 } // .saving-content
             } // .saving
+
+            .checking {
+                background-color: $checkinglight;
+                margin: 10px;
+                max-width: 20%;
+                border: 2px $checkingdark solid;
+                box-shadow: $dropshadow;
+
+                .checking-header {
+                    background-color: $checking;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px;
+                    border-bottom: 1px $checkingdark solid;
+                    text-transform: uppercase;
+
+                } // .saving-header
+
+                .checking-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        margin: 5px;
+
+                        tr:hover {
+                            background-color: $checkingcontrast;
+                            color: $fontcolorlight;
+                        }
+
+                        th, td {
+                            text-align: center;
+                            vertical-align: center;
+                            padding: 5px;
+                            border-bottom: 1px solid $checkingcontrast;
+                        }
+
+                        th {
+                            background-color: $checkingcontrastdark;
+                            color: $fontcolorlight;
+                        }
+                        
+
+                        
+                        
+                    }
+                } // .chbecking-content
+            } // .checking
         } // .acount-content
 
 
@@ -169,7 +300,7 @@ body {
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: $themeprimarydark;
+            background-color: $primarydark;
             background-color: rgba(0,0,0,0.4);
         } // .modal
 

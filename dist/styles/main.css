@@ -88,6 +88,11 @@ body .accounts .sub-header .modal-button {
   margin: 10px;
   padding: 5px;
 }
+body .accounts .sub-header .modal-button:hover {
+  background-color: #0277bd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+}
 body .accounts .checking-modal-content {
   background-color: #efefef;
   border: 1px solid #888;
@@ -106,10 +111,116 @@ body .accounts .account-content {
   display: flex;
 }
 body .accounts .account-content .saving {
-  background-color: #bbdefb;
+  background-color: #9fffe0;
+  margin: 10px;
+  max-width: 20%;
+  border: 2px #2bbd7e solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 body .accounts .account-content .saving .saving-header {
-  background-color: #8aacc8;
+  background-color: #69f0ae;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px #2bbd7e solid;
+  text-transform: uppercase;
+}
+body .accounts .account-content .saving .saving-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .accounts .account-content .saving .saving-content .bucket {
+  margin: 10px;
+  border: 1px #546e7a solid;
+  background-color: #efefef;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-header {
+  display: flex;
+  background-color: #29434e;
+  color: white;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-header .bucket-title {
+  padding: 5px;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-header .bucket-total {
+  padding: 5px;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-progress .bucket-progress-container {
+  height: 15px;
+  position: relative;
+  background: #819ca9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-progress .bucket-progress-container .bucket-progress-meter {
+  width: 25%;
+  display: block;
+  height: 100%;
+  background-color: #546e7a;
+  position: relative;
+  overflow: hidden;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-content {
+  margin: 5px;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-content .bucket-row {
+  display: flex;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-content .bucket-row .bucket-item-date {
+  padding: 5px;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-content .bucket-row .bucket-item-amount {
+  padding: 5px;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-goal {
+  display: flex;
+  background-color: #546e7a;
+  color: white;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-goal .bucket-goal-title {
+  padding: 5px;
+}
+body .accounts .account-content .saving .saving-content .bucket .bucket-goal .bucket-goal-amount {
+  padding: 5px;
+}
+body .accounts .account-content .checking {
+  background-color: #82f7ff;
+  margin: 10px;
+  max-width: 20%;
+  border: 2px #0094cc solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body .accounts .account-content .checking .checking-header {
+  background-color: #40c4ff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px #0094cc solid;
+  text-transform: uppercase;
+}
+body .accounts .account-content .checking .checking-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .accounts .account-content .checking .checking-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 5px;
+}
+body .accounts .account-content .checking .checking-content table tr:hover {
+  background-color: #0277bd;
+  color: white;
+}
+body .accounts .account-content .checking .checking-content table th, body .accounts .account-content .checking .checking-content table td {
+  text-align: center;
+  vertical-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #0277bd;
+}
+body .accounts .account-content .checking .checking-content table th {
+  background-color: #004c8c;
+  color: white;
 }
 body .hide {
   display: none;

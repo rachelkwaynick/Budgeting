@@ -10,18 +10,35 @@ $fontxl: 32px;
 
 
 $backgroundcolor: #efefef;
+$dropshadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-$themeprimarydark: #004c8c;
-$themeprimary: #0277bd;
-$themeprimarylight: #58a5f0;
-
-
-
-$themesecondarydark: #8aacc8;
-$themesecondary: #bbdefb;
-$themesecondarylight: #eeffff;      
+$primarydark: #004c8c;
+$primary: #0277bd;
+$primarylight: #58a5f0;
 
 
-$themetertiarydark: #00b2cc;
-$themetertiary: #00e5ff;
-$themetertiarylight: #6effff;
+
+$secondarydark: #8aacc8;
+$secondary: #bbdefb;
+$secondarylight: #eeffff;      
+
+
+$tertiarydark: #00b2cc;
+$tertiary: #00e5ff;
+$tertiarylight: #6effff;
+
+$savingdark: #2bbd7e;
+$saving: #69f0ae;
+$savinglight: #9fffe0;
+
+$savingcontrastdark: #29434e;
+$savingcontrast: #546e7a;
+$savingcontrastlight: #819ca9;
+
+$checkingdark: #0094cc;
+$checking: #40c4ff;
+$checkinglight: #82f7ff;
+
+$checkingcontrastdark: #004c8c;
+$checkingcontrast: #0277bd;
+$checkingcontrastlight: #58a5f0;
